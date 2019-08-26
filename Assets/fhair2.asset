@@ -1,0 +1,888 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45d0f3e5603d4dc4590e42266f0a90da, type: 3}
+  m_Name: fhair2
+  m_EditorClassIdentifier: 
+  mesh: {fileID: 4300010, guid: 5a6377a33ccd7494fa8b48f2d8f40ba9, type: 3}
+  degraded_rectangles:
+  - vertex1: 0
+    vertex2: 1
+    triangle1_vertex3: 2
+    triangle2_vertex3: -1
+  - vertex1: 1
+    vertex2: 2
+    triangle1_vertex3: 0
+    triangle2_vertex3: 14
+  - vertex1: 2
+    vertex2: 0
+    triangle1_vertex3: 1
+    triangle2_vertex3: 3
+  - vertex1: 2
+    vertex2: 3
+    triangle1_vertex3: 0
+    triangle2_vertex3: 4
+  - vertex1: 3
+    vertex2: 0
+    triangle1_vertex3: 2
+    triangle2_vertex3: 81
+  - vertex1: 2
+    vertex2: 4
+    triangle1_vertex3: 3
+    triangle2_vertex3: 11
+  - vertex1: 4
+    vertex2: 3
+    triangle1_vertex3: 2
+    triangle2_vertex3: 5
+  - vertex1: 5
+    vertex2: 3
+    triangle1_vertex3: 4
+    triangle2_vertex3: 81
+  - vertex1: 4
+    vertex2: 5
+    triangle1_vertex3: 3
+    triangle2_vertex3: 6
+  - vertex1: 6
+    vertex2: 5
+    triangle1_vertex3: 4
+    triangle2_vertex3: 7
+  - vertex1: 4
+    vertex2: 6
+    triangle1_vertex3: 5
+    triangle2_vertex3: 10
+  - vertex1: 6
+    vertex2: 7
+    triangle1_vertex3: 5
+    triangle2_vertex3: 8
+  - vertex1: 7
+    vertex2: 5
+    triangle1_vertex3: 6
+    triangle2_vertex3: 90
+  - vertex1: 8
+    vertex2: 7
+    triangle1_vertex3: 6
+    triangle2_vertex3: 9
+  - vertex1: 6
+    vertex2: 8
+    triangle1_vertex3: 7
+    triangle2_vertex3: 20
+  - vertex1: 8
+    vertex2: 9
+    triangle1_vertex3: 7
+    triangle2_vertex3: 22
+  - vertex1: 9
+    vertex2: 7
+    triangle1_vertex3: 8
+    triangle2_vertex3: 87
+  - vertex1: 4
+    vertex2: 10
+    triangle1_vertex3: 6
+    triangle2_vertex3: 11
+  - vertex1: 10
+    vertex2: 6
+    triangle1_vertex3: 4
+    triangle2_vertex3: 20
+  - vertex1: 4
+    vertex2: 11
+    triangle1_vertex3: 10
+    triangle2_vertex3: 2
+  - vertex1: 11
+    vertex2: 10
+    triangle1_vertex3: 4
+    triangle2_vertex3: 12
+  - vertex1: 2
+    vertex2: 11
+    triangle1_vertex3: 4
+    triangle2_vertex3: 14
+  - vertex1: 11
+    vertex2: 12
+    triangle1_vertex3: 10
+    triangle2_vertex3: 13
+  - vertex1: 12
+    vertex2: 10
+    triangle1_vertex3: 11
+    triangle2_vertex3: 19
+  - vertex1: 11
+    vertex2: 13
+    triangle1_vertex3: 12
+    triangle2_vertex3: 14
+  - vertex1: 13
+    vertex2: 12
+    triangle1_vertex3: 11
+    triangle2_vertex3: 16
+  - vertex1: 11
+    vertex2: 14
+    triangle1_vertex3: 13
+    triangle2_vertex3: 15
+  - vertex1: 14
+    vertex2: 13
+    triangle1_vertex3: 11
+    triangle2_vertex3: 16
+  - vertex1: 15
+    vertex2: 14
+    triangle1_vertex3: 11
+    triangle2_vertex3: 23
+  - vertex1: 14
+    vertex2: 16
+    triangle1_vertex3: 13
+    triangle2_vertex3: 17
+  - vertex1: 16
+    vertex2: 13
+    triangle1_vertex3: 14
+    triangle2_vertex3: 12
+  - vertex1: 16
+    vertex2: 12
+    triangle1_vertex3: 13
+    triangle2_vertex3: 18
+  - vertex1: 14
+    vertex2: 17
+    triangle1_vertex3: 16
+    triangle2_vertex3: 23
+  - vertex1: 17
+    vertex2: 16
+    triangle1_vertex3: 14
+    triangle2_vertex3: 91
+  - vertex1: 16
+    vertex2: 18
+    triangle1_vertex3: 12
+    triangle2_vertex3: 91
+  - vertex1: 18
+    vertex2: 12
+    triangle1_vertex3: 16
+    triangle2_vertex3: 19
+  - vertex1: 19
+    vertex2: 10
+    triangle1_vertex3: 12
+    triangle2_vertex3: 20
+  - vertex1: 12
+    vertex2: 19
+    triangle1_vertex3: 10
+    triangle2_vertex3: 18
+  - vertex1: 18
+    vertex2: 19
+    triangle1_vertex3: 12
+    triangle2_vertex3: 28
+  - vertex1: 19
+    vertex2: 20
+    triangle1_vertex3: 10
+    triangle2_vertex3: 25
+  - vertex1: 20
+    vertex2: 10
+    triangle1_vertex3: 19
+    triangle2_vertex3: 6
+  - vertex1: 20
+    vertex2: 6
+    triangle1_vertex3: 10
+    triangle2_vertex3: 8
+  - vertex1: 20
+    vertex2: 8
+    triangle1_vertex3: 6
+    triangle2_vertex3: 21
+  - vertex1: 21
+    vertex2: 8
+    triangle1_vertex3: 20
+    triangle2_vertex3: 22
+  - vertex1: 20
+    vertex2: 21
+    triangle1_vertex3: 8
+    triangle2_vertex3: 25
+  - vertex1: 21
+    vertex2: 22
+    triangle1_vertex3: 8
+    triangle2_vertex3: 24
+  - vertex1: 22
+    vertex2: 8
+    triangle1_vertex3: 21
+    triangle2_vertex3: 9
+  - vertex1: 22
+    vertex2: 9
+    triangle1_vertex3: 8
+    triangle2_vertex3: 31
+  - vertex1: 23
+    vertex2: 14
+    triangle1_vertex3: 15
+    triangle2_vertex3: 17
+  - vertex1: 23
+    vertex2: 17
+    triangle1_vertex3: 14
+    triangle2_vertex3: -1
+  - vertex1: 24
+    vertex2: 22
+    triangle1_vertex3: 21
+    triangle2_vertex3: 30
+  - vertex1: 21
+    vertex2: 24
+    triangle1_vertex3: 22
+    triangle2_vertex3: 25
+  - vertex1: 25
+    vertex2: 24
+    triangle1_vertex3: 21
+    triangle2_vertex3: 26
+  - vertex1: 21
+    vertex2: 25
+    triangle1_vertex3: 24
+    triangle2_vertex3: 20
+  - vertex1: 20
+    vertex2: 25
+    triangle1_vertex3: 21
+    triangle2_vertex3: 19
+  - vertex1: 19
+    vertex2: 25
+    triangle1_vertex3: 20
+    triangle2_vertex3: 27
+  - vertex1: 25
+    vertex2: 26
+    triangle1_vertex3: 24
+    triangle2_vertex3: 27
+  - vertex1: 26
+    vertex2: 24
+    triangle1_vertex3: 25
+    triangle2_vertex3: 40
+  - vertex1: 19
+    vertex2: 27
+    triangle1_vertex3: 25
+    triangle2_vertex3: 28
+  - vertex1: 27
+    vertex2: 25
+    triangle1_vertex3: 19
+    triangle2_vertex3: 26
+  - vertex1: 27
+    vertex2: 26
+    triangle1_vertex3: 25
+    triangle2_vertex3: 29
+  - vertex1: 19
+    vertex2: 28
+    triangle1_vertex3: 27
+    triangle2_vertex3: 18
+  - vertex1: 28
+    vertex2: 27
+    triangle1_vertex3: 19
+    triangle2_vertex3: 86
+  - vertex1: 18
+    vertex2: 28
+    triangle1_vertex3: 19
+    triangle2_vertex3: 89
+  - vertex1: 27
+    vertex2: 29
+    triangle1_vertex3: 26
+    triangle2_vertex3: 83
+  - vertex1: 29
+    vertex2: 26
+    triangle1_vertex3: 27
+    triangle2_vertex3: 41
+  - vertex1: 30
+    vertex2: 22
+    triangle1_vertex3: 24
+    triangle2_vertex3: 31
+  - vertex1: 24
+    vertex2: 30
+    triangle1_vertex3: 22
+    triangle2_vertex3: 40
+  - vertex1: 31
+    vertex2: 22
+    triangle1_vertex3: 30
+    triangle2_vertex3: 9
+  - vertex1: 30
+    vertex2: 31
+    triangle1_vertex3: 22
+    triangle2_vertex3: 32
+  - vertex1: 30
+    vertex2: 32
+    triangle1_vertex3: 31
+    triangle2_vertex3: 33
+  - vertex1: 32
+    vertex2: 31
+    triangle1_vertex3: 30
+    triangle2_vertex3: 85
+  - vertex1: 30
+    vertex2: 33
+    triangle1_vertex3: 32
+    triangle2_vertex3: 34
+  - vertex1: 33
+    vertex2: 32
+    triangle1_vertex3: 30
+    triangle2_vertex3: 84
+  - vertex1: 30
+    vertex2: 34
+    triangle1_vertex3: 33
+    triangle2_vertex3: 39
+  - vertex1: 34
+    vertex2: 33
+    triangle1_vertex3: 30
+    triangle2_vertex3: 35
+  - vertex1: 35
+    vertex2: 33
+    triangle1_vertex3: 34
+    triangle2_vertex3: 36
+  - vertex1: 34
+    vertex2: 35
+    triangle1_vertex3: 33
+    triangle2_vertex3: 38
+  - vertex1: 35
+    vertex2: 36
+    triangle1_vertex3: 33
+    triangle2_vertex3: 37
+  - vertex1: 36
+    vertex2: 33
+    triangle1_vertex3: 35
+    triangle2_vertex3: 97
+  - vertex1: 35
+    vertex2: 37
+    triangle1_vertex3: 36
+    triangle2_vertex3: 38
+  - vertex1: 37
+    vertex2: 36
+    triangle1_vertex3: 35
+    triangle2_vertex3: 97
+  - vertex1: 34
+    vertex2: 38
+    triangle1_vertex3: 35
+    triangle2_vertex3: 39
+  - vertex1: 38
+    vertex2: 35
+    triangle1_vertex3: 34
+    triangle2_vertex3: 37
+  - vertex1: 38
+    vertex2: 37
+    triangle1_vertex3: 35
+    triangle2_vertex3: 98
+  - vertex1: 34
+    vertex2: 39
+    triangle1_vertex3: 38
+    triangle2_vertex3: 30
+  - vertex1: 39
+    vertex2: 38
+    triangle1_vertex3: 34
+    triangle2_vertex3: 93
+  - vertex1: 30
+    vertex2: 39
+    triangle1_vertex3: 34
+    triangle2_vertex3: 40
+  - vertex1: 30
+    vertex2: 40
+    triangle1_vertex3: 39
+    triangle2_vertex3: 24
+  - vertex1: 40
+    vertex2: 39
+    triangle1_vertex3: 30
+    triangle2_vertex3: 43
+  - vertex1: 26
+    vertex2: 40
+    triangle1_vertex3: 24
+    triangle2_vertex3: 41
+  - vertex1: 40
+    vertex2: 24
+    triangle1_vertex3: 26
+    triangle2_vertex3: 30
+  - vertex1: 26
+    vertex2: 41
+    triangle1_vertex3: 40
+    triangle2_vertex3: 29
+  - vertex1: 41
+    vertex2: 40
+    triangle1_vertex3: 26
+    triangle2_vertex3: 42
+  - vertex1: 42
+    vertex2: 40
+    triangle1_vertex3: 41
+    triangle2_vertex3: 43
+  - vertex1: 41
+    vertex2: 42
+    triangle1_vertex3: 40
+    triangle2_vertex3: 44
+  - vertex1: 42
+    vertex2: 43
+    triangle1_vertex3: 40
+    triangle2_vertex3: 48
+  - vertex1: 43
+    vertex2: 40
+    triangle1_vertex3: 42
+    triangle2_vertex3: 39
+  - vertex1: 43
+    vertex2: 39
+    triangle1_vertex3: 40
+    triangle2_vertex3: 46
+  - vertex1: 41
+    vertex2: 44
+    triangle1_vertex3: 42
+    triangle2_vertex3: 45
+  - vertex1: 44
+    vertex2: 42
+    triangle1_vertex3: 41
+    triangle2_vertex3: 51
+  - vertex1: 41
+    vertex2: 45
+    triangle1_vertex3: 44
+    triangle2_vertex3: 29
+  - vertex1: 45
+    vertex2: 44
+    triangle1_vertex3: 41
+    triangle2_vertex3: 84
+  - vertex1: 41
+    vertex2: 29
+    triangle1_vertex3: 45
+    triangle2_vertex3: 26
+  - vertex1: 29
+    vertex2: 45
+    triangle1_vertex3: 41
+    triangle2_vertex3: 84
+  - vertex1: 43
+    vertex2: 46
+    triangle1_vertex3: 39
+    triangle2_vertex3: 47
+  - vertex1: 46
+    vertex2: 39
+    triangle1_vertex3: 43
+    triangle2_vertex3: 95
+  - vertex1: 43
+    vertex2: 47
+    triangle1_vertex3: 46
+    triangle2_vertex3: 48
+  - vertex1: 47
+    vertex2: 46
+    triangle1_vertex3: 43
+    triangle2_vertex3: 99
+  - vertex1: 43
+    vertex2: 48
+    triangle1_vertex3: 47
+    triangle2_vertex3: 42
+  - vertex1: 48
+    vertex2: 47
+    triangle1_vertex3: 43
+    triangle2_vertex3: 49
+  - vertex1: 42
+    vertex2: 48
+    triangle1_vertex3: 43
+    triangle2_vertex3: 50
+  - vertex1: 48
+    vertex2: 49
+    triangle1_vertex3: 47
+    triangle2_vertex3: 50
+  - vertex1: 49
+    vertex2: 47
+    triangle1_vertex3: 48
+    triangle2_vertex3: 99
+  - vertex1: 48
+    vertex2: 50
+    triangle1_vertex3: 49
+    triangle2_vertex3: 42
+  - vertex1: 50
+    vertex2: 49
+    triangle1_vertex3: 48
+    triangle2_vertex3: 51
+  - vertex1: 42
+    vertex2: 50
+    triangle1_vertex3: 48
+    triangle2_vertex3: 51
+  - vertex1: 50
+    vertex2: 51
+    triangle1_vertex3: 49
+    triangle2_vertex3: 42
+  - vertex1: 51
+    vertex2: 49
+    triangle1_vertex3: 50
+    triangle2_vertex3: 100
+  - vertex1: 42
+    vertex2: 51
+    triangle1_vertex3: 50
+    triangle2_vertex3: 44
+  - vertex1: 44
+    vertex2: 51
+    triangle1_vertex3: 42
+    triangle2_vertex3: 96
+  - vertex1: 52
+    vertex2: 53
+    triangle1_vertex3: 54
+    triangle2_vertex3: 55
+  - vertex1: 53
+    vertex2: 54
+    triangle1_vertex3: 52
+    triangle2_vertex3: 61
+  - vertex1: 54
+    vertex2: 52
+    triangle1_vertex3: 53
+    triangle2_vertex3: 105
+  - vertex1: 52
+    vertex2: 55
+    triangle1_vertex3: 53
+    triangle2_vertex3: 56
+  - vertex1: 55
+    vertex2: 53
+    triangle1_vertex3: 52
+    triangle2_vertex3: 60
+  - vertex1: 52
+    vertex2: 56
+    triangle1_vertex3: 55
+    triangle2_vertex3: 105
+  - vertex1: 56
+    vertex2: 55
+    triangle1_vertex3: 52
+    triangle2_vertex3: 57
+  - vertex1: 56
+    vertex2: 57
+    triangle1_vertex3: 55
+    triangle2_vertex3: 58
+  - vertex1: 57
+    vertex2: 55
+    triangle1_vertex3: 56
+    triangle2_vertex3: 59
+  - vertex1: 56
+    vertex2: 58
+    triangle1_vertex3: 57
+    triangle2_vertex3: 109
+  - vertex1: 58
+    vertex2: 57
+    triangle1_vertex3: 56
+    triangle2_vertex3: 62
+  - vertex1: 59
+    vertex2: 55
+    triangle1_vertex3: 57
+    triangle2_vertex3: 60
+  - vertex1: 57
+    vertex2: 59
+    triangle1_vertex3: 55
+    triangle2_vertex3: 67
+  - vertex1: 59
+    vertex2: 60
+    triangle1_vertex3: 55
+    triangle2_vertex3: 106
+  - vertex1: 60
+    vertex2: 55
+    triangle1_vertex3: 59
+    triangle2_vertex3: 53
+  - vertex1: 60
+    vertex2: 53
+    triangle1_vertex3: 55
+    triangle2_vertex3: 61
+  - vertex1: 60
+    vertex2: 61
+    triangle1_vertex3: 53
+    triangle2_vertex3: 106
+  - vertex1: 61
+    vertex2: 53
+    triangle1_vertex3: 60
+    triangle2_vertex3: 54
+  - vertex1: 61
+    vertex2: 54
+    triangle1_vertex3: 53
+    triangle2_vertex3: 107
+  - vertex1: 62
+    vertex2: 57
+    triangle1_vertex3: 58
+    triangle2_vertex3: 63
+  - vertex1: 58
+    vertex2: 62
+    triangle1_vertex3: 57
+    triangle2_vertex3: 111
+  - vertex1: 62
+    vertex2: 63
+    triangle1_vertex3: 57
+    triangle2_vertex3: 64
+  - vertex1: 63
+    vertex2: 57
+    triangle1_vertex3: 62
+    triangle2_vertex3: 67
+  - vertex1: 64
+    vertex2: 63
+    triangle1_vertex3: 62
+    triangle2_vertex3: 65
+  - vertex1: 62
+    vertex2: 64
+    triangle1_vertex3: 63
+    triangle2_vertex3: 113
+  - vertex1: 64
+    vertex2: 65
+    triangle1_vertex3: 63
+    triangle2_vertex3: 68
+  - vertex1: 65
+    vertex2: 63
+    triangle1_vertex3: 64
+    triangle2_vertex3: 66
+  - vertex1: 66
+    vertex2: 63
+    triangle1_vertex3: 65
+    triangle2_vertex3: 67
+  - vertex1: 65
+    vertex2: 66
+    triangle1_vertex3: 63
+    triangle2_vertex3: 71
+  - vertex1: 66
+    vertex2: 67
+    triangle1_vertex3: 63
+    triangle2_vertex3: 112
+  - vertex1: 67
+    vertex2: 63
+    triangle1_vertex3: 66
+    triangle2_vertex3: 57
+  - vertex1: 67
+    vertex2: 57
+    triangle1_vertex3: 63
+    triangle2_vertex3: 59
+  - vertex1: 67
+    vertex2: 59
+    triangle1_vertex3: 57
+    triangle2_vertex3: 110
+  - vertex1: 68
+    vertex2: 65
+    triangle1_vertex3: 64
+    triangle2_vertex3: 69
+  - vertex1: 64
+    vertex2: 68
+    triangle1_vertex3: 65
+    triangle2_vertex3: 113
+  - vertex1: 68
+    vertex2: 69
+    triangle1_vertex3: 65
+    triangle2_vertex3: 70
+  - vertex1: 69
+    vertex2: 65
+    triangle1_vertex3: 68
+    triangle2_vertex3: 71
+  - vertex1: 70
+    vertex2: 69
+    triangle1_vertex3: 68
+    triangle2_vertex3: 71
+  - vertex1: 68
+    vertex2: 70
+    triangle1_vertex3: 69
+    triangle2_vertex3: 73
+  - vertex1: 71
+    vertex2: 65
+    triangle1_vertex3: 69
+    triangle2_vertex3: 66
+  - vertex1: 69
+    vertex2: 71
+    triangle1_vertex3: 65
+    triangle2_vertex3: 72
+  - vertex1: 71
+    vertex2: 66
+    triangle1_vertex3: 65
+    triangle2_vertex3: 115
+  - vertex1: 72
+    vertex2: 71
+    triangle1_vertex3: 69
+    triangle2_vertex3: 77
+  - vertex1: 68
+    vertex2: 73
+    triangle1_vertex3: 70
+    triangle2_vertex3: 116
+  - vertex1: 73
+    vertex2: 70
+    triangle1_vertex3: 68
+    triangle2_vertex3: 74
+  - vertex1: 73
+    vertex2: 74
+    triangle1_vertex3: 70
+    triangle2_vertex3: 75
+  - vertex1: 74
+    vertex2: 70
+    triangle1_vertex3: 73
+    triangle2_vertex3: 77
+  - vertex1: 75
+    vertex2: 74
+    triangle1_vertex3: 73
+    triangle2_vertex3: 76
+  - vertex1: 73
+    vertex2: 75
+    triangle1_vertex3: 74
+    triangle2_vertex3: 118
+  - vertex1: 76
+    vertex2: 74
+    triangle1_vertex3: 75
+    triangle2_vertex3: 79
+  - vertex1: 75
+    vertex2: 76
+    triangle1_vertex3: 74
+    triangle2_vertex3: -1
+  - vertex1: 72
+    vertex2: 77
+    triangle1_vertex3: 71
+    triangle2_vertex3: 78
+  - vertex1: 77
+    vertex2: 71
+    triangle1_vertex3: 72
+    triangle2_vertex3: 117
+  - vertex1: 78
+    vertex2: 77
+    triangle1_vertex3: 72
+    triangle2_vertex3: 79
+  - vertex1: 78
+    vertex2: 79
+    triangle1_vertex3: 77
+    triangle2_vertex3: 80
+  - vertex1: 79
+    vertex2: 77
+    triangle1_vertex3: 78
+    triangle2_vertex3: 119
+  - vertex1: 80
+    vertex2: 79
+    triangle1_vertex3: 78
+    triangle2_vertex3: -1
+  - vertex1: 3
+    vertex2: 81
+    triangle1_vertex3: 0
+    triangle2_vertex3: 5
+  - vertex1: 81
+    vertex2: 0
+    triangle1_vertex3: 3
+    triangle2_vertex3: -1
+  - vertex1: 5
+    vertex2: 81
+    triangle1_vertex3: 3
+    triangle2_vertex3: 103
+  - vertex1: 31
+    vertex2: 9
+    triangle1_vertex3: 22
+    triangle2_vertex3: 87
+  - vertex1: 82
+    vertex2: 83
+    triangle1_vertex3: 84
+    triangle2_vertex3: 85
+  - vertex1: 83
+    vertex2: 84
+    triangle1_vertex3: 82
+    triangle2_vertex3: 93
+  - vertex1: 84
+    vertex2: 82
+    triangle1_vertex3: 83
+    triangle2_vertex3: 94
+  - vertex1: 85
+    vertex2: 83
+    triangle1_vertex3: 82
+    triangle2_vertex3: 86
+  - vertex1: 85
+    vertex2: 86
+    triangle1_vertex3: 83
+    triangle2_vertex3: 87
+  - vertex1: 87
+    vertex2: 86
+    triangle1_vertex3: 85
+    triangle2_vertex3: 88
+  - vertex1: 87
+    vertex2: 88
+    triangle1_vertex3: 86
+    triangle2_vertex3: 89
+  - vertex1: 87
+    vertex2: 89
+    triangle1_vertex3: 88
+    triangle2_vertex3: 90
+  - vertex1: 90
+    vertex2: 89
+    triangle1_vertex3: 87
+    triangle2_vertex3: 91
+  - vertex1: 90
+    vertex2: 91
+    triangle1_vertex3: 89
+    triangle2_vertex3: 92
+  - vertex1: 92
+    vertex2: 91
+    triangle1_vertex3: 90
+    triangle2_vertex3: 103
+  - vertex1: 93
+    vertex2: 84
+    triangle1_vertex3: 83
+    triangle2_vertex3: 97
+  - vertex1: 84
+    vertex2: 94
+    triangle1_vertex3: 82
+    triangle2_vertex3: 95
+  - vertex1: 84
+    vertex2: 95
+    triangle1_vertex3: 94
+    triangle2_vertex3: 96
+  - vertex1: 96
+    vertex2: 95
+    triangle1_vertex3: 84
+    triangle2_vertex3: 99
+  - vertex1: 93
+    vertex2: 97
+    triangle1_vertex3: 84
+    triangle2_vertex3: 98
+  - vertex1: 98
+    vertex2: 97
+    triangle1_vertex3: 93
+    triangle2_vertex3: 101
+  - vertex1: 96
+    vertex2: 99
+    triangle1_vertex3: 95
+    triangle2_vertex3: 100
+  - vertex1: 100
+    vertex2: 99
+    triangle1_vertex3: 96
+    triangle2_vertex3: 102
+  - vertex1: 103
+    vertex2: 91
+    triangle1_vertex3: 92
+    triangle2_vertex3: 104
+  - vertex1: 103
+    vertex2: 104
+    triangle1_vertex3: 91
+    triangle2_vertex3: -1
+  - vertex1: 105
+    vertex2: 106
+    triangle1_vertex3: 107
+    triangle2_vertex3: 108
+  - vertex1: 107
+    vertex2: 105
+    triangle1_vertex3: 106
+    triangle2_vertex3: 121
+  - vertex1: 108
+    vertex2: 106
+    triangle1_vertex3: 105
+    triangle2_vertex3: 109
+  - vertex1: 109
+    vertex2: 106
+    triangle1_vertex3: 108
+    triangle2_vertex3: 110
+  - vertex1: 109
+    vertex2: 110
+    triangle1_vertex3: 106
+    triangle2_vertex3: 111
+  - vertex1: 111
+    vertex2: 110
+    triangle1_vertex3: 109
+    triangle2_vertex3: 112
+  - vertex1: 111
+    vertex2: 112
+    triangle1_vertex3: 110
+    triangle2_vertex3: 113
+  - vertex1: 113
+    vertex2: 112
+    triangle1_vertex3: 111
+    triangle2_vertex3: 114
+  - vertex1: 113
+    vertex2: 114
+    triangle1_vertex3: 112
+    triangle2_vertex3: 115
+  - vertex1: 113
+    vertex2: 115
+    triangle1_vertex3: 114
+    triangle2_vertex3: 116
+  - vertex1: 116
+    vertex2: 115
+    triangle1_vertex3: 113
+    triangle2_vertex3: 117
+  - vertex1: 116
+    vertex2: 117
+    triangle1_vertex3: 115
+    triangle2_vertex3: 118
+  - vertex1: 118
+    vertex2: 117
+    triangle1_vertex3: 116
+    triangle2_vertex3: 119
+  - vertex1: 118
+    vertex2: 119
+    triangle1_vertex3: 117
+    triangle2_vertex3: 120
+  - vertex1: 120
+    vertex2: 119
+    triangle1_vertex3: 118
+    triangle2_vertex3: -1
