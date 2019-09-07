@@ -5,3 +5,4 @@
 使用方法：双击SampleScene场景，点击运行即可。  
 原理：在[这里](https://www.cnblogs.com/lht666/p/11447199.html)  
 > ![img](demo.png)  
+> ![img](preview.gif)  
