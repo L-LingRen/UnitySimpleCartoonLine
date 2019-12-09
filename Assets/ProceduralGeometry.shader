@@ -9,6 +9,7 @@ Shader "Custom/ProceduralGeometry" {
     StructuredBuffer<float3> _Vertices;
     StructuredBuffer<float3> _Normals;
     StructuredBuffer<float2> _Uvs;
+    float EdgeWidth = 0.01;
     ENDCG
 
         SubShader{
@@ -71,22 +72,67 @@ Shader "Custom/ProceduralGeometry" {
                     }
 
                     // 把顶点转换到裁剪空间
-                    o.vertex1 = UnityObjectToClipPos(vertex1 + vertex1_normal * 0.0001f) * is_edge;
-                    o.vertex2 = UnityObjectToClipPos(vertex2 + vertex2_normal * 0.0001f) * is_edge;
+                    o.vertex1 = UnityObjectToClipPos(vertex1 + vertex1_normal * 0.001f) * is_edge;
+                    o.vertex2 = UnityObjectToClipPos(vertex2 + vertex2_normal * 0.001f) * is_edge;
                     return o;
                 }
 
-                [maxvertexcount(2)]
-                void geometry_shader(point v2g input[1], inout LineStream<g2f> stream) {
+                /*
+                使用"LineStream"画线条
+                use "LineStream" to draw line
+                */
+                //[maxvertexcount(2)]
+                //void geometry_shader(point v2g input[1], inout LineStream<g2f> stream) {
+                //    // 使用几何着色器把退化四边形进化成线条
+                //    // 直接使用stream.RestartStrip();即可，如有更好的方法请自行实现。
+                //    g2f o;
+                //    o.position = input[0].vertex1;
+                //    stream.Append(o);
+                //    o.position = input[0].vertex2;
+                //    stream.Append(o);
+                //    stream.RestartStrip();
+                //}
+
+                /*
+                使用"TriangleStream"画2个三角形, 来组成1个四边形模拟线条粗细。
+                use "TriangleStream" to draw two triangle to make a quad to control the width of line.
+                */
+                [maxvertexcount(6)]
+                void geometry_shader(point v2g input[1], inout TriangleStream<g2f> stream) {
                     // 使用几何着色器把退化四边形进化成线条
                     // 直接使用stream.RestartStrip();即可，如有更好的方法请自行实现。
                     g2f o;
-                    o.position = input[0].vertex1;
+
+                    float PctExtend = 0.01;
+
+                    float3 e0 = input[0].vertex1.xyz / input[0].vertex1.w;
+                    float3 e1 = input[0].vertex2.xyz / input[0].vertex2.w;
+                    float2 ext = PctExtend * (e1.xy - e0.xy);
+                    float2 v = normalize(float3(e1.xy - e0.xy, 0)).xy;
+                    float2 n = float2(-v.y, v.x) * EdgeWidth;
+
+                    float4 v0 = float4(e0.xy + n / 2.0 - ext, e0.z, 1.0);
+                    float4 v1 = float4(e0.xy - n / 2.0 - ext, e0.z, 1.0);
+                    float4 v2 = float4(e1.xy + n / 2.0 + ext, e1.z, 1.0);
+                    float4 v3 = float4(e1.xy - n / 2.0 + ext, e1.z, 1.0);
+
+                    o.position = v0;
                     stream.Append(o);
-                    o.position = input[0].vertex2;
+                    o.position = v3;
+                    stream.Append(o);
+                    o.position = v2;
+                    stream.Append(o);
+                    stream.RestartStrip();
+
+                    o.position = v0;
+                    stream.Append(o);
+                    o.position = v1;
+                    stream.Append(o);
+                    o.position = v3;
                     stream.Append(o);
                     stream.RestartStrip();
                 }
+                
 
                 fixed4 fragment_shader(g2f i) : SV_Target{
                     // 给线条一个颜色

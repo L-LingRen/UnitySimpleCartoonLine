@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -256,13 +256,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0, y: 0.99552333, z: 0, w: 0.09451657}
+  m_LocalPosition: {x: -0.35, y: 0.71, z: 1.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 169.15302, z: 0}
 --- !u!1 &991537517 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 5a6377a33ccd7494fa8b48f2d8f40ba9,
@@ -281,6 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41299aabc357fac42b5d71eed6e1e729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  edgeWidth: 0.01
   prefab_material: {fileID: 2100000, guid: 380b24f1196ba434cb4424c9e5643e38, type: 2}
   degraded_rectangles: {fileID: 11400000, guid: ccea8f7f39422fa4686d965a91daf0a8,
     type: 2}
@@ -383,6 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41299aabc357fac42b5d71eed6e1e729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  edgeWidth: 0.01
   prefab_material: {fileID: 2100000, guid: 380b24f1196ba434cb4424c9e5643e38, type: 2}
   degraded_rectangles: {fileID: 11400000, guid: e858a67de49195843b16c8fe19ff2b4c,
     type: 2}
@@ -404,6 +406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41299aabc357fac42b5d71eed6e1e729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  edgeWidth: 0.00364
   prefab_material: {fileID: 2100000, guid: 380b24f1196ba434cb4424c9e5643e38, type: 2}
   degraded_rectangles: {fileID: 11400000, guid: b6f7cda32bd0e0749b83c548be3dffaf,
     type: 2}
@@ -425,6 +428,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41299aabc357fac42b5d71eed6e1e729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  edgeWidth: 0.01
   prefab_material: {fileID: 2100000, guid: 380b24f1196ba434cb4424c9e5643e38, type: 2}
   degraded_rectangles: {fileID: 11400000, guid: 57ac2560584ae82418b92d2eed6ef466,
     type: 2}
@@ -446,6 +450,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41299aabc357fac42b5d71eed6e1e729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  edgeWidth: 0.01
   prefab_material: {fileID: 2100000, guid: 380b24f1196ba434cb4424c9e5643e38, type: 2}
   degraded_rectangles: {fileID: 11400000, guid: e7959a35c4dd22f4ba67e0065da6ff06,
     type: 2}

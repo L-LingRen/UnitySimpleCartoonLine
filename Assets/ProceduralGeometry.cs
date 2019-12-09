@@ -16,6 +16,8 @@ using System.Collections.Generic;
 [ExecuteInEditMode]
 [RequireComponent(typeof(SkinnedMeshRenderer))]
 public class ProceduralGeometry : MonoBehaviour {
+    [Range(0, 0.01f)]
+    public float edgeWidth = 0.01f;
     public Material prefab_material;              // 预置材质，用于实例化
     public DegradedRectangles degraded_rectangles;// 退化四边形资源文件
 
@@ -62,6 +64,7 @@ public class ProceduralGeometry : MonoBehaviour {
             if (is_visible) { // 模型可见时才进行描边
                 command_buffer.DrawProcedural(transform.localToWorldMatrix, material, 0, MeshTopology.Points, degraded_rectangles_count);
                 //Graphics.ExecuteCommandBuffer(command_buffer);
+                material.SetFloat("EdgeWidth", edgeWidth);
                 buffer_manager.SetBuffer();
             }
         }
