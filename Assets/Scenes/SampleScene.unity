@@ -281,7 +281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41299aabc357fac42b5d71eed6e1e729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  edgeWidth: 0.01
+  edgeWidth: 0.00792
   prefab_material: {fileID: 2100000, guid: 380b24f1196ba434cb4424c9e5643e38, type: 2}
   degraded_rectangles: {fileID: 11400000, guid: ccea8f7f39422fa4686d965a91daf0a8,
     type: 2}
@@ -384,7 +384,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 41299aabc357fac42b5d71eed6e1e729, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  edgeWidth: 0.01
+  edgeWidth: 0.00299
   prefab_material: {fileID: 2100000, guid: 380b24f1196ba434cb4424c9e5643e38, type: 2}
   degraded_rectangles: {fileID: 11400000, guid: e858a67de49195843b16c8fe19ff2b4c,
     type: 2}
